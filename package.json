@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mochapi/mochapi.github.io#readme",
   "devDependencies": {
     "grunt": "^1.0.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
