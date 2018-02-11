@@ -1,0 +1,133 @@
+//
+// Mochapi
+// --------------------------------------------------
+
+@charset 'utf-8';
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+// Common
+@import './common/_normalize';
+@import './common/_variables';
+@import './common/_mixins';
+
+
+
+//------------------------------------------------------------
+// Elements
+//
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  letter-spacing: @letter-spacing-base;
+  color: @text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: @font-weight-base;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease-out .3s;
+  &:hover,
+  &:active {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+ul,ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+dl,dd {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+
+
+//------------------------------------------------------------
+// TopPage
+//
+
+.top {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #77333b;
+}
+
+#nameCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 184px;
+  height: 349px;
+  padding: 24px 24px 24px 32px;
+  font-size: @font-s;
+  background-color: @white;
+  .my-name {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: @line-height-s;
+    span,ruby {
+      display: block;
+      width: 50%;
+    }
+    span {
+      font-size: @font-xxxl;
+    }
+    ruby {
+      font-size: @font-m;
+      color: @gray;
+      text-align: right;
+    }
+    rt {
+      font-size: @font-xxs;
+      color: @gray-light;
+    }
+  }
+  .job-title {
+    margin-top: 0.5rem;
+  }
+}

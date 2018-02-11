@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/mochapi/mochapi.github.io#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "autoprefixer": "^7.2.6",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1"
   },
-  "dependencies": {
-    "gulp": "^3.9.1"
-  }
+  "dependencies": {}
 }

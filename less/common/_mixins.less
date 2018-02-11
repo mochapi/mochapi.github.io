@@ -1,0 +1,38 @@
+// Mixins
+// --------------------------------------------------
+
+// clearfix
+.clearfix () {
+  zoom: 1;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+  }
+}
+
+// clear text
+.clear-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// ellipsis, clip
+.text-overflow (@v: ellipsis) {
+  text-overflow: @v;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-overflow-default () {
+  text-overflow: clip;
+  white-space: normal;
+  overflow: visible;
+}
+
+// none, subpixel-antialiased, antialiased
+.font-smoothing (@v: antialiased) {
+  -webkit-font-smoothing: @v;
+}
