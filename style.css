@@ -36,6 +36,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -70,6 +71,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -202,6 +204,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -233,6 +236,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -305,6 +309,7 @@ template {
   overflow: hidden;
 }
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -331,11 +336,12 @@ a {
   color: #333;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
 }
 a:hover,
 a:active {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 p {
@@ -366,24 +372,57 @@ address {
 .top {
   height: 100vh;
   overflow: hidden;
-  background-color: #77333b;
+  background-image: url("static/images/bg.png");
+  background-size: 300px 300px;
+  background-color: #f7c46c;
 }
 #nameCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 184px;
-  height: 349px;
-  padding: 24px 24px 24px 32px;
+  width: 240px;
+  height: 397px;
   font-size: 12px;
   background-color: #fff;
+  -webkit-box-shadow: 16px 16px rgba(196, 126, 90, 0.1);
+  box-shadow: 16px 16px rgba(196, 126, 90, 0.1);
+}
+@media screen and (max-width: 440px) {
+  #nameCard {
+    width: 295px;
+    height: 514px;
+    font-size: 16px;
+  }
+}
+#nameCard article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 24px 24px 32px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 440px) {
+  #nameCard article {
+    padding: 36px 36px 36px 40px;
+  }
 }
 #nameCard .my-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   line-height: 1.3;
 }
@@ -395,10 +434,20 @@ address {
 #nameCard .my-name span {
   font-size: 24px;
 }
+@media screen and (max-width: 440px) {
+  #nameCard .my-name span {
+    font-size: 32px;
+  }
+}
 #nameCard .my-name ruby {
   font-size: 13px;
   color: #bdbdbd;
   text-align: right;
+}
+@media screen and (max-width: 440px) {
+  #nameCard .my-name ruby {
+    font-size: 14px;
+  }
 }
 #nameCard .my-name rt {
   font-size: 9px;
