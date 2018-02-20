@@ -376,6 +376,11 @@ address {
   background-size: 300px 300px;
   background-color: #f7c46c;
 }
+@media screen and (max-width: 440px) {
+  .top {
+    background-size: 150px 150px;
+  }
+}
 #nameCard {
   display: block;
   position: absolute;
