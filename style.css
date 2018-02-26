@@ -378,7 +378,7 @@ address {
 }
 @media screen and (max-width: 440px) {
   .top {
-    background-size: 150px 150px;
+    background-size: 200px 200px;
   }
 }
 #nameCard {

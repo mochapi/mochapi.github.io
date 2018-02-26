@@ -10,20 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/mochapi/mochapi.github.io.git"
   },
-  "author": "",
+  "author": "Ito Nozomi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mochapi/mochapi.github.io/issues"
   },
   "homepage": "https://github.com/mochapi/mochapi.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^7.2.6",
+    "autoprefixer": "^8.0.0",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cssmin": "^0.2.0",
-    "gulp-less": "^3.5.0",
+    "gulp-less": "^4.0.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1"
   },
