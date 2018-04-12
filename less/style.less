@@ -19,10 +19,12 @@
 //
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
 body {
+  height: 100%;
   font-family: @font-family-base;
   font-weight: @font-weight-base;
   font-size: @font-size-base;
@@ -77,10 +79,6 @@ img {
   max-width: 100%;
 }
 
-address {
-  font-style: normal;
-}
-
 
 
 //------------------------------------------------------------
@@ -126,33 +124,28 @@ address {
     }
   }
   .my-name {
-    display: flex;
-    flex-wrap: wrap;
     line-height: @line-height-s;
-    span,ruby {
-      display: block;
-      width: 50%;
-    }
-    span {
-      font-size: @font-xxxl;
-      @media @viewport-max-440 {
-        font-size: @font-xxxxl;
-      }
-    }
-    ruby {
-      font-size: @font-m;
+  }
+  .job {
+    margin-top: 0.8rem;
+    line-height: @line-height-s;
+    dd {
+      display: inline-block;
+      font-size: @font-xs;
       color: @gray;
-      text-align: right;
-      @media @viewport-max-440 {
-        font-size: @font-l;
+      &:after {
+        content: "/";
+        margin: 0 4px;
+        color: @gray-light;
       }
-    }
-    rt {
-      font-size: @font-xxs;
-      color: @gray-light;
+      &:last-child {
+        &:after {
+          content: "";
+        }
+      }
     }
   }
-  .job-title {
-    margin-top: 0.5rem;
+  address {
+    font-style: normal;
   }
 }

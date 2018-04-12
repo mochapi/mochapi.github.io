@@ -1,5 +1,16 @@
 @charset 'utf-8';
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,10 +320,12 @@ template {
   overflow: hidden;
 }
 html {
+  height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
+  height: 100%;
   font-family: 'Roboto', Helvetica, Arial, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "メイリオ", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -365,9 +378,6 @@ dd {
 img {
   height: auto;
   max-width: 100%;
-}
-address {
-  font-style: normal;
 }
 .top {
   height: 100vh;
@@ -424,40 +434,25 @@ address {
   }
 }
 #nameCard .my-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   line-height: 1.3;
 }
-#nameCard .my-name span,
-#nameCard .my-name ruby {
-  display: block;
-  width: 50%;
+#nameCard .job {
+  margin-top: 0.8rem;
+  line-height: 1.3;
 }
-#nameCard .my-name span {
-  font-size: 24px;
-}
-@media screen and (max-width: 440px) {
-  #nameCard .my-name span {
-    font-size: 32px;
-  }
-}
-#nameCard .my-name ruby {
-  font-size: 13px;
+#nameCard .job dd {
+  display: inline-block;
+  font-size: 10px;
   color: #bdbdbd;
-  text-align: right;
 }
-@media screen and (max-width: 440px) {
-  #nameCard .my-name ruby {
-    font-size: 14px;
-  }
-}
-#nameCard .my-name rt {
-  font-size: 9px;
+#nameCard .job dd:after {
+  content: "/";
+  margin: 0 4px;
   color: #e0e0e0;
 }
-#nameCard .job-title {
-  margin-top: 0.5rem;
+#nameCard .job dd:last-child:after {
+  content: "";
+}
+#nameCard address {
+  font-style: normal;
 }
