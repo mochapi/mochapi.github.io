@@ -20,6 +20,7 @@
 
 html {
   height: 100%;
+  font-size: @font-size-base;
   box-sizing: border-box;
 }
 
@@ -27,7 +28,6 @@ body {
   height: 100%;
   font-family: @font-family-base;
   font-weight: @font-weight-base;
-  font-size: @font-size-base;
   line-height: @line-height-base;
   letter-spacing: @letter-spacing-base;
   color: @text-color;
@@ -104,38 +104,39 @@ img {
   transform: translate(-50%, -50%);
   width: 240px;
   height: 397px;
-  font-size: @font-s;
   background-color: @white;
+  border-radius: .1em;
   box-shadow: 16px 16px rgba(196,126,90,.10);
   @media @viewport-max-440 {
     width: 295px;
     height: 514px;
-    font-size: @font-xl;
   }
   article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 24px 24px 32px;
+    padding: 2em;
     box-sizing: border-box;
     @media @viewport-max-440 {
-      padding: 36px 36px 36px 40px;
+      padding: 2em;
     }
   }
   .my-name {
+    font-size: @font-xxxxl;
     line-height: @line-height-s;
   }
   .job {
-    margin-top: 0.8rem;
+    margin-top: 2em;
     line-height: @line-height-s;
     dd {
       display: inline-block;
+      margin-top: .5em;
       font-size: @font-xs;
       color: @gray;
       &:after {
         content: "/";
-        margin: 0 4px;
+        margin: 0 .2em;
         color: @gray-light;
       }
       &:last-child {
