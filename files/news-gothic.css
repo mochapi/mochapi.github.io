@@ -1,0 +1,44 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3800818, 2019-08-26T05:33:28-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: NewsGot-Reg by URW
+ * URL: https://www.myfonts.com/fonts/urw/news-gothic/t-regular/
+ *
+ * Webfont: NewsGot-Dem by URW
+ * URL: https://www.myfonts.com/fonts/urw/news-gothic/t-demi/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3800818
+ * Licensed pageviews: 100,000
+ * Webfonts copyright: Copyright 2010 URW++ Design &amp; Development Hamburg
+ *
+ * © 2019 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/39fef2");
+
+@font-face {
+  font-family: 'NewsGot';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('39FEF2_0_0.woff2') format('woff2'),
+       url('39FEF2_0_0.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NewsGot';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('39FEF2_1_0.woff2') format('woff2'),
+       url('39FEF2_1_0.woff') format('woff');
+}
